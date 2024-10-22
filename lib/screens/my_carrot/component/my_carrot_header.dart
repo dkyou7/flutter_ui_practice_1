@@ -6,6 +6,7 @@ class MyCarrotHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.white,
       elevation: 0.5,
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0)),
@@ -111,11 +112,11 @@ class MyCarrotHeader extends StatelessWidget {
           height: 60,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              color: Color.fromRGBO(255, 226, 208, 1),
+              color: Colors.black,
               border: Border.all(color: Color(0xFFD4D5DD), width: 0.5)),
           child: Icon(
             iconData,
-            color: Colors.orange,
+            color: Colors.white,
           ),
         ),
         SizedBox(height: 10),
