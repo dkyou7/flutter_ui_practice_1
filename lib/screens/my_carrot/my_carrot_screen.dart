@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practice/models/icon_menu.dart';
+import 'package:flutter_ui_practice/screens/my_carrot/component/card_icon_menu.dart';
 import 'package:flutter_ui_practice/screens/my_carrot/component/my_carrot_header.dart';
 
 class MyCarrotScreen extends StatelessWidget {
@@ -8,7 +9,6 @@ class MyCarrotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('내정보'),
         actions: [
@@ -26,7 +26,12 @@ class MyCarrotScreen extends StatelessWidget {
       body: ListView(
         children: [
           MyCarrotHeader(),
-          //iconmenu
+          const SizedBox(height: 8.0,),
+          CardIconMenu(iconMenuList: iconMenu1),
+          const SizedBox(height: 8.0,),
+          CardIconMenu(iconMenuList: iconMenu2),
+          const SizedBox(height: 8.0,),
+          CardIconMenu(iconMenuList: iconMenu3),
         ],
       ),
     );
