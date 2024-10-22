@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practice/screens/my_carrot/component/my_carrot_header.dart';
 
 class MyCarrotScreen extends StatelessWidget {
   const MyCarrotScreen({super.key});
@@ -7,7 +8,7 @@ class MyCarrotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('내정보'),
         actions: [
@@ -24,7 +25,7 @@ class MyCarrotScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          //header
+          MyCarrotHeader(),
           //iconmenu
         ],
       ),
